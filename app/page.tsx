@@ -40,15 +40,6 @@ const IconSend = () => (
     <line x1="22" y1="2" x2="11" y2="13" /><polygon points="22 2 15 22 11 13 2 9 22 2" />
   </svg>
 );
-const IconBot = () => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
-    <rect x="3" y="11" width="18" height="11" rx="2" />
-    <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-    <line x1="12" y1="15" x2="12" y2="17" />
-    <line x1="8" y1="15" x2="8" y2="17" />
-    <line x1="16" y1="15" x2="16" y2="17" />
-  </svg>
-);
 const IconFile = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
     <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
@@ -299,10 +290,6 @@ export default function Home() {
                     </div>
                   ) : (
                     <div key={i} className="msg-assistant">
-                      <div className="assistant-header">
-                        <div className="assistant-avatar"><IconBot /></div>
-                        <span className="assistant-name">RepoChat</span>
-                      </div>
                       <div className="bubble-assistant">
                         {m.text || (
                           <span className="thinking-text">
